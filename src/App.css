@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.sidebar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 240px;
+  background-color: #39427D;
+  padding: 6px 14px;
+}
+
+.show_side .icon_1{
+  position: absolute;
+  color: rgb(0, 0, 0);
+  left: 85%;
+  font-size: 2.5rem;
+  text-align: center;
+  line-height: 50px;
+  transform: translateX(-50%);
+}
+
+.profile_img{
+  display: flex;
+  margin-left: 15px;
+  margin-top: 50px;
+  .img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+  .profile_content{
+    color: aliceblue;
+    margin-left: 10px;
+  }
+}
+
+.sidebar ul{
+  margin-top: 50px;
+  margin-left: 10px;
+}
+
+.sidebar ul li,
+.sidebar .settings ul li{
+  position: relative;
+  height: 50px;
+  width: 100%;
+  margin: 30px 5px;
+  list-style: none;
+  line-height: 50px;
+}
+
+.sidebar ul li .tool_tip{
+  position: absolute;
+  height: 35px;
+  left: 150px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 122px;
+  background: #fff;
+  line-height: 35px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  border-radius: 5px;
+  transition: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.sidebar ul li:hover .tool_tip{
+  top: 50%;
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+
+.sidebar ul li a,
+.sidebar .settings ul li a{
+  color: aliceblue;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: all 0.4s ease;
+  border-radius: 5px;
+}
+
+.sidebar ul li a:hover{
+  color: #000000;
+  background-color: #666C8D;
+}
+
+.sidebar ul li a .links_name{
+  margin-left: 10px;
+  letter-spacing: 1px;
+}
+
+.sidebar ul li a .icon{
+  height: 40px;
+  min-width: 50px;
+  border-radius: 12px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.sidebar .settings{
+  position: absolute;
+  bottom: 0;
+}
+
+.sidebar .settings ul li a{
+  padding-right: 60px;
+}
